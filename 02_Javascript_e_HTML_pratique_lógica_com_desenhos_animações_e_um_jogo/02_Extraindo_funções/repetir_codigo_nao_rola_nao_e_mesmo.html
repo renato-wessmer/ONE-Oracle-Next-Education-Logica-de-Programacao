@@ -1,0 +1,119 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function  desenhaQuadrado(x, y, cor) {
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = cor;
+    pincel.fillRect(x, y, 50, 50);
+    pincel.fillStroke = 'black';
+    pincel.strokeRect(x, y, 50, 50); /* comando gera a borda */
+
+    }
+
+    var x = 0
+
+    while(x < 600) {
+
+        desenhaQuadrado(x, 0, 'green');
+        desenhaQuadrado(x, 50, 'red');
+        desenhaQuadrado(x, 100, 'blue');
+        x = x +50;
+    }
+
+</script>
+
+
+<!--
+
+Agora implantaremos uma função, essa foi a primeira parte do código
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0, 0, 50, 50);
+    pincel.fillStroke = 'black';
+    pincel.strokeRect(0, 0, 50, 50); /* comando gera a borda */
+
+    pincel.fillRect(50, 0, 50, 50);
+    pincel.strokeRect(50, 0, 50, 50);
+
+    pincel.fillRect(100, 0, 50, 50);
+    pincel.strokeRect(100, 0, 50, 50);
+
+    segundo roud
+
+    <script>
+
+    function  desenhaQuadradoVerde(x) {
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'green';
+    pincel.fillRect(x, 0, 50, 50);
+    pincel.fillStroke = 'black';
+    pincel.strokeRect(x, 0, 50, 50); /* comando gera a borda */
+
+    }
+
+    desenhaQuadradoVerde(0);
+    desenhaQuadradoVerde(50);
+    desenhaQuadradoVerde(100);
+
+    terceiro round
+
+    function  desenhaQuadradoVerde(x, y) {
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'green';
+    pincel.fillRect(x, y, 50, 50);
+    pincel.fillStroke = 'black';
+    pincel.strokeRect(x, y, 50, 50); /* comando gera a borda */
+
+    }
+
+    function  desenhaQuadradoVermelho(x, y) {
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(x, y, 50, 50);
+    pincel.fillStroke = 'black';
+    pincel.strokeRect(x, y, 50, 50); /* comando gera a borda */
+
+    }
+
+    desenhaQuadradoVerde(0, 0);
+    desenhaQuadradoVermelho(0, 50);
+    desenhaQuadradoVerde(0, 100);
+
+    quarto round 
+
+        function  desenhaQuadrado(x, y, cor) {
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = cor;
+    pincel.fillRect(x, y, 50, 50);
+    pincel.fillStroke = 'black';
+    pincel.strokeRect(x, y, 50, 50); /* comando gera a borda */
+
+    }
+
+    desenhaQuadrado(0, 0, 'blue');
+    desenhaQuadrado(0, 50, 'red');
+    desenhaQuadrado(0, 100, 'yellow');
+
+</script>
+
+
+-->
